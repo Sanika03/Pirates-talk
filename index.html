@@ -33,6 +33,15 @@
             font-size: larger;
         }
 
+        .pirate {
+            display: block;
+            margin: 3% 35%;
+            align-self: center;
+            float: center;
+            height: 200px;
+            width: 200px;
+        }
+
         textarea {
             display: block;
             border: 2px solid black;
@@ -107,6 +116,11 @@
                 width : 80%;
             
             }
+
+            .pirate{
+                align-self: center;
+                float: none;
+            }
         }
     </style>
 </head>
@@ -118,6 +132,8 @@
 
         <div class="row">
             <div class="container">
+                <img class="pirate" src="\images\pirate.png" alt height="200" width="200">
+
                 <textarea id="txt-input" placeholder="Put your sentence in English here to convert it to pirate language"></textarea>
 
                 <button id="btn-translate">Translate</button>
