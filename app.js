@@ -4,6 +4,11 @@ var outputDiv = document.querySelector("output-div");
 
 var serverUrl = "https://api.funtranslations.com/translate/pirate.json";
 
+function errorHandling(error){
+    console.log("Error occurred : " + error);
+    alert("Server error occurred. Please try again later");
+}
+
 function getUrl(input){
     return (serverUrl + "?" + "text=" + input);
 }
@@ -17,4 +22,6 @@ function clickHandler(){
             var outputText = json.contents.translation;
             outputDiv.innerText = outputText;
         })
+
+    .catch(errorHandling);
 }
