@@ -16,6 +16,7 @@ function getUrl(input) {
 
 function clickHandler() {
     if(textInput.value != ""){
+        errorDiv.style.display = "none";
         var inputText = textInput.value;
         fetch(getUrl(inputText))
             .then(response => response.json())
